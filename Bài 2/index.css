@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .box {
+  margin-top: 100px;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(./image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wrapper .box:hover {
+  margin-top: 90px;
+  -webkit-box-shadow: -30px 30px 20px -9px rgba(0, 0, 0, 0.3);
+  box-shadow: -30px 30px 20px -9px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .box:hover .overlay {
+  display: block;
+}
+
+.wrapper .box:hover .text {
+  top: 10px;
+}
+
+.wrapper .box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #b3abab;
+  opacity: 0.3;
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wrapper .box .text {
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 300px;
+  z-index: 3;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
+}
+
+.wrapper .box-content {
+  position: relative;
+  height: 100px;
+  width: 300px;
+  background-color: cyan;
+  margin-left: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.wrapper .box-content:hover .text {
+  bottom: 0;
+}
+
+.wrapper .box-content .text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -150px;
+  padding: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+/*# sourceMappingURL=index.css.map */
